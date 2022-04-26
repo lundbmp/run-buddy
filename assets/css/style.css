@@ -231,3 +231,12 @@ section {
 .text-right {
     text-align: right;
 }
+
+.contact {
+    background:#024e76;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #fce138;
+}
