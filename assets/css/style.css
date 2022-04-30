@@ -1,24 +1,28 @@
+/*Initalizing margin, padding, and box sizing for the entire page*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Initalizing a default color and font for the body*/
 body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
 }
-
+/*Styling for the title and navigation bar*/
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
     font-weight: bold;
+    margin: 0;
     font-size: 36px;
     color: #fce138;
-    margin: 0;
 }
   
 header a {
@@ -27,7 +31,6 @@ header a {
 }
 
 header nav {
-    float: right;
     margin: 7px 0;
 }
 
@@ -48,35 +51,12 @@ header h1 {
     margin: 0;
     display: inline;
 }
-
-footer {
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-}
-
-footer h2 {
-    display: inline;
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-}
- 
-footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: #024e76;
-}
-
+/*Default padding for section tags*/
 section {
     padding: 60px;
 }
 
-/* Hero styling */
+/*Styling for the Hero image and the signup form*/
 .hero {
     background-image: url("../images/hero-bg.jpg");
     height: 600px;
@@ -127,7 +107,7 @@ section {
     width: 100%;
     margin-bottom: 15px;
 }
-
+/*Styling for 'What we do' section*/
 .intro {
     text-align: center;
 }
@@ -139,7 +119,7 @@ section {
     font-size: 20px;
     margin: 0 auto;
 }
-
+/*Styling for the 'What you do' section*/
 .steps {
     text-align: center;
     background: #fce138;
@@ -168,7 +148,7 @@ section {
 .steps span {
     font-size: 38px;
 }
-
+/*Title styling for 'What we do' 'What you do' 'Meet the trainers' and 'Contact us'*/
 .section-title {
     font-size: 55px;
     color: #024e76;
@@ -177,15 +157,15 @@ section {
     display: inline-block;
     border-bottom: 3px solid;
 }
-  
+/*Border for 'What we do' and 'Meet the trainers'*/
 .primary-border {
     border-color: #fce138;
 }
-  
+/*Border for 'What you do' and 'Reach out'*/
 .secondary-border {
     border-color: #39a6b2;
 }
-
+/*Styling for 'Meet the trainers' section*/
 .trainers {
     text-align: center;
 }
@@ -232,7 +212,7 @@ section {
 .text-right {
     text-align: right;
 }
-
+/*Styling for 'Contact us' section*/
 .contact {
     background:#024e76;
     text-align: center;
@@ -270,4 +250,27 @@ section {
   
 .contact-info a {
     color: #fce138;
+}
+/*Styling for 'contact us' section*/
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+ 
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: #024e76;
 }
